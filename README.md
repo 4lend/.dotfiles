@@ -2,4 +2,5 @@
 
 Make sure you have rcm
 
-Make foler in home directory .dotfiles, after that make rcup
+Make foler in home directory .dotfiles
+cd .dotfiles -> git clone -> rcup | done 
