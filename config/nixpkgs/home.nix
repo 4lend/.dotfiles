@@ -6,12 +6,24 @@
   home.username = "alfurqani";
   home.homeDirectory = "/home/alfurqani";
 
-  # home.packages = with pkgs; [
-  defaultPkgs = with pkgs; [
-    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  
+  home.packages = with pkgs; [
+  # defaultPkgs = with pkgs; [
+    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  aria
   ];
 
+  # YT-DLP
+  # programs.yt-dlp = {
+  #     enable = true;
+  #     config = 
+  #     --write-subs 
+  #     --write-autosubs 
+  #     --subs-langs en
+  #     --downloader aria2c
+  # };
   # FISH
+  # users.users.alfurqani = {
+  #     shell = "pkgs.fish";
+  # };
   programs.fish = {
     enable = true;
     shellAliases = {
