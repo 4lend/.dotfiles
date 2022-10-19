@@ -10,7 +10,7 @@
   # defaultPkgs = with pkgs; [
   # environment.systemPackages = with pkgs; [
   home.packages = with pkgs; [
-    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  aria  iotop  alacritty  kitty  haskellPackages.OpenGL  xorg_sys_opengl
+    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  aria  iotop  alacritty  kitty  haskellPackages.OpenGL  xorg_sys_opengl  sudo  opendoas  
   ];
 
   # YT-DLP
@@ -52,6 +52,7 @@
       py3	= "python3";
       cl	= "clear";
       s		= "sudo su";
+      o    = "sudo"
       mkd	= "mkdir";
       rm	= "rm";
       rmf 	= "rm -rf"; 
