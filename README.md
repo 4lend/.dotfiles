@@ -1,5 +1,7 @@
 # .dotfiles
 
+XFCE - NIX HOME-MANAGER
+
 Make sure you have rcm
 
 Make foler in home directory .dotfiles
