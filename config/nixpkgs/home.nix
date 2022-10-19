@@ -6,9 +6,11 @@
   home.username = "alfurqani";
   home.homeDirectory = "/home/alfurqani";
 
-  home.packages = with pkgs; [
+  # nixpkgs.system = with pkgs; [
   # defaultPkgs = with pkgs; [
-    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  aria
+  # environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
+    neovim  vim  tmux  btop  htop  cmus  cava  neofetch  yt-dlp  speedtest-cli  vifm  ytmdl  fish  zsh  starship  rcm  duf  exa  bat  nextdns  adguardhome  git  protonvpn-gui  protonvpn-cli  firewalld  nordic  whitesur-icon-theme  whitesur-icon-theme  nordzy-icon-theme  aria  iotop  alacritty  kitty  haskellPackages.OpenGL  xorg_sys_opengl
   ];
 
   # YT-DLP
@@ -27,10 +29,10 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      ll	= "exa -1 -g -l --icons -s type";
-      lla	= "exa -1 -g -l --icons -s type -a";
-      llt	= "exa -1 -g -l --icons -s type -T";
-      llat	= "exa -1 -g -l --icons -s type -a -T";
+      l	= "exa -1 -g -l --icons -s type";
+      la	= "exa -1 -g -l --icons -s type -a";
+      lt	= "exa -1 -g -l --icons -s type -T";
+      lat	= "exa -1 -g -l --icons -s type -a -T";
 
       n		= "sudo nixos-rebuild switch";
       conix	= "sudo nvim /etc/nixos/configuration.nix";
