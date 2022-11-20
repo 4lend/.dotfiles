@@ -1,0 +1,5 @@
+
+  --write-subs
+  --write-auto-subs
+  --sub-langs en
+  --downloader aria2c
