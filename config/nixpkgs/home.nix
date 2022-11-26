@@ -91,14 +91,27 @@
       };
     };
 
-    ## FISH ##
-    fish = 
+    # ## FISH ##
+    # fish = 
+    # {
+    #   enable = true;
+    #   interactiveShellInit =
+    #   "
+    #     bind \t accept-autosuggestion
+    #   ";
+    # };
+
+    ## YT-DLP ##
+    yt-dlp =
     {
       enable = true;
-      # interactiveShellInit =
-      # "
-      #   bind \t accept-autosuggestion
-      # ";
+      extraConfig = 
+      "
+        --write-subs
+	--write-auto-subs
+	--sub-langs en
+	--downloader aria2c 
+      ";
     };
 
     qutebrowser =
