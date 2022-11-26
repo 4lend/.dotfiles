@@ -3,8 +3,53 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
+
   home.username = "alfurqani";
   home.homeDirectory = "/home/alfurqani";
+
+  home.stateVersion = "22.05";
+
+  # imports = 
+  # [
+  #   ./modules
+  # ];
+
+  programs =
+  {
+    home-manager.enable = true;
+
+    ## ALACRITTY ##
+    alacritty = 
+    {
+    enable = true;
+    settings = 
+      {
+        # opacity = 1.0;
+	dynamic_padding = true;
+	size = 14.0;
+	selection.save_to_clipboard = true; 
+	window =
+	{
+	  opacity = 1.0;
+	  decorations = "none";
+	  padding = 
+	  {
+	    x = 5;
+	    y = 5;
+	  };
+          startup_mode = "Fullscreen";
+	};
+      };
+    };
+
+    qutebrowser =
+    {
+    enable = true;
+    enableDefaultBindings = true;
+    };
+  };
+
+  # Let Home Manager install and manage itself.
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -14,13 +59,4 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "22.05";
-
-  # Let Home Manager install and manage itself.
-  programs =
-  {
-  home-manager.enable = true;
-  alacritty.enable = true;
-  
-  };
 }
