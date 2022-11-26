@@ -42,6 +42,21 @@
       };
     };
 
+    ## MPV ##
+    mpv =
+    {
+      enable = true;
+      config = 
+      {
+      sub-font = "Comic Sans";
+      sub-font-size = 35;
+      sub-color = "#FFFE25";
+      window = "fullscreen";
+      speed = 1.15;
+      playback = "save-position-on-quit";
+      };
+    };
+
     qutebrowser =
     {
     enable = true;
