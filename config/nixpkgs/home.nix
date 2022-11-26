@@ -48,12 +48,12 @@
       enable = true;
       config = 
       {
-      sub-font = "Comic Sans";
-      sub-font-size = 35;
-      sub-color = "#FFFE25";
-      window = "fullscreen";
-      speed = 1.15;
-      playback = "save-position-on-quit";
+        sub-font = "Comic Sans";
+        sub-font-size = 35;
+        sub-color = "#FFFE25";
+        window = "fullscreen";
+        speed = 1.15;
+        playback = "save-position-on-quit";
       };
     };
 
@@ -64,8 +64,8 @@
       theme = "Nord"; 
       font = 
         {
-        name = "comic mono";
-        size = 14;
+          name = "comic mono";
+          size = 14;
         };
       extraConfig =
         "
@@ -89,6 +89,16 @@
 
 	"ctrl+enter" = "launch --cwd=current";
       };
+    };
+
+    ## FISH ##
+    fish = 
+    {
+      enable = true;
+      # interactiveShellInit =
+      # "
+      #   bind \t accept-autosuggestion
+      # ";
     };
 
     qutebrowser =
