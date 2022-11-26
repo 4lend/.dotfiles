@@ -57,6 +57,40 @@
       };
     };
 
+    ## KITTY ##
+    kitty = 
+    {
+      enable = true;
+      theme = "Nord"; 
+      font = 
+        {
+        name = "comic mono";
+        size = 14;
+        };
+      extraConfig =
+        "
+	  cursor_shape block
+
+	  adjust_line_height 0
+	  adjust_colomn_width 0
+
+	  remember_window_size yes
+
+	  hide_window_decorations yes
+
+	  confirm_os_window_close 0
+        ";
+      keybindings =
+      {
+        "ctrl+shift+h" = "scroll_line_up";
+	"ctrl+shift+l" = "scroll_line_down";
+	"ctrl+shift+k" = "scroll_page_up";
+	"ctrl+shift+j" = "scroll_page_down";
+
+	"ctrl+enter" = "launch --cwd=current";
+      };
+    };
+
     qutebrowser =
     {
     enable = true;
