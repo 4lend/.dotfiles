@@ -152,6 +152,19 @@
       ";
     };
 
+    ## LIBREWOLF ##
+    librewolf = 
+    {
+      enable = true;
+      settings =
+      {
+        "identity.fxaccounts.enabled" = true;
+        "extensions.webextensions.base-content-security-policy" = true;
+        "extensions.webextensions.base-content-security-policy.v3" = true;
+
+      };
+    };
+
     qutebrowser =
     {
     enable = true;
