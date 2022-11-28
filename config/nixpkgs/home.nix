@@ -14,6 +14,11 @@
   #   ./modules
   # ];
 
+  home.packages = with pkgs;
+  [
+    cloudflare-warp
+  ];
+
   programs =
   {
     home-manager.enable = true;
@@ -26,7 +31,10 @@
       {
         # opacity = 1.0;
 	dynamic_padding = true;
-	size = 14.0;
+	font =
+	{
+	  size = 14;
+	};
 	selection.save_to_clipboard = true; 
 	window =
 	{
@@ -38,6 +46,51 @@
 	    y = 5;
 	  };
           startup_mode = "Fullscreen";
+	  schemes =
+	  {
+	    ### Doom One ###
+            DoomOne = 
+	    {
+              primary =
+	      {
+                background = "#282c34";
+                foreground = "#bbc2cf";
+	      };
+              cursor =
+	      {
+                text = "CellBackground";
+                cursor = "#528bff";
+	      };
+              selection =
+	      {
+                text = "CellForeground";
+                background = "#3e4451";
+	      };
+              normal =
+	      {
+                black =   "#1c1f24";
+                red =     "#ff6c6b";
+                green =   "#98be65";
+                yellow =  "#da8548";
+                blue =    "#51afef";
+                magenta = "#c678dd";
+                cyan =    "#5699af";
+                white =   "#202328";
+	      };
+              bright =             
+	      {
+                black =   "#5b6268";
+                red =     "#da8548";
+                green =   "#4db5bd";
+                yellow =  "#ecbe7b";
+                blue =    "#3071db";   # This is 2257a0 in Doom Emacs but I lightened it.
+                magenta = "#a9a1e1";
+                cyan =    "#46d9ff";
+                white =   "#dfdfdf";
+	      };
+	    };
+	    colors = "DoomOne";
+	  };
 	};
       };
     };
@@ -54,6 +107,8 @@
         window = "fullscreen";
         speed = 1.15;
         playback = "save-position-on-quit";
+	fullscreen = "yes";
+	save-position-on-quit = "yes";
       };
     };
 
@@ -79,6 +134,7 @@
 	  hide_window_decorations yes
 
 	  confirm_os_window_close 0
+
         ";
       keybindings =
       {
@@ -152,17 +208,25 @@
       ";
     };
 
-    ## LIBREWOLF ##
-    librewolf = 
+    # ## LIBREWOLF ##
+    # librewolf = 
+    # {
+    #   enable = true;
+    #   settings =
+    #   {
+    #     "identity.fxaccounts.enabled" = true;
+    #     "extensions.webextensions.base-content-security-policy" = true;
+    #     "extensions.webextensions.base-content-security-policy.v3" = true;
+
+    #   };
+    # };
+
+    ## GIT ##
+    git = 
     {
       enable = true;
-      settings =
-      {
-        "identity.fxaccounts.enabled" = true;
-        "extensions.webextensions.base-content-security-policy" = true;
-        "extensions.webextensions.base-content-security-policy.v3" = true;
-
-      };
+      userEmail = "syifa.alfurqoni@gmail.com";
+      userName = "Alfurqani";
     };
 
     qutebrowser =
