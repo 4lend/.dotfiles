@@ -199,13 +199,20 @@
     yt-dlp =
     {
       enable = true;
-      extraConfig = 
-      "
-        --write-subs
-	--write-auto-subs
-	--sub-langs en
-	--downloader aria2c 
-      ";
+      settings = 
+      {
+        sub-langs = "en";
+	downloader = "aria2c";
+	write-subs = true;
+	write-auto-subs = true;
+      };
+      # extraConfig = 
+      # "
+      #   --write-subs
+      #   --write-auto-subs
+      #   --sub-langs en
+      #   --downloader aria2c 
+      # ";
     };
 
     ## GIT ##
@@ -214,6 +221,12 @@
       enable = true;
       userEmail = "syifa.alfurqoni@gmail.com";
       userName = "Alfurqani";
+    };
+
+    ## NEOVIM ## 
+    neovim =
+    {
+      enable = true;
     };
 
     qutebrowser =
