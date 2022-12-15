@@ -7,7 +7,7 @@
   home.username = "alfurqani";
   home.homeDirectory = "/home/alfurqani";
 
-  home.stateVersion = "22.05";
+  home.stateVersion = "22.11";
 
   # imports = 
   # [
@@ -109,6 +109,7 @@
         playback = "save-position-on-quit";
 	fullscreen = "yes";
 	save-position-on-quit = "yes";
+	sub-ass-override = "force";
       };
     };
 
@@ -119,7 +120,7 @@
       theme = "Nord"; 
       font = 
         {
-          name = "comic mono";
+          name = "ComicMono";
           size = 14;
         };
       extraConfig =
@@ -135,6 +136,8 @@
 
 	  confirm_os_window_close 0
 
+	  fish_color_valid_path --none
+
         ";
       keybindings =
       {
@@ -145,6 +148,19 @@
 
 	"ctrl+enter" = "launch --cwd=current";
       };
+    };
+
+    ## TMUX ##
+    tmux = 
+    {
+      enable = true;
+      clock24 = true; 
+      keyMode = "vi";
+      extraConfig = 
+      ''
+        set -g default-terminal "xterm-256color"
+	
+      '';
     };
 
     # ## FISH ##
@@ -195,6 +211,16 @@
       };
     };
 
+    ## FZF ##
+    fzf = 
+    {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+      tmux.enableShellIntegration = true;
+    };
+
     ## YT-DLP ##
     yt-dlp =
     {
@@ -227,6 +253,12 @@
     neovim =
     {
       enable = true;
+      coc.enable = true;
+      extraConfig = 
+      ''
+        set number
+        set relativenumber
+      '';
     };
 
     qutebrowser =
