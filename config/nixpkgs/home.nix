@@ -150,18 +150,18 @@
       };
     };
 
-    ## TMUX ##
-    tmux = 
-    {
-      enable = true;
-      clock24 = true; 
-      keyMode = "vi";
-      extraConfig = 
-      ''
-        set -g default-terminal "xterm-256color"
-	
-      '';
-    };
+    # ## TMUX ##
+    # tmux = 
+    # {
+    #   enable = true;
+    #   clock24 = true; 
+    #   keyMode = "vi";
+    #   extraConfig = 
+    #   ''
+    #     set -g default-terminal "xterm-256color"
+    #     
+    #   '';
+    # };
 
     # ## FISH ##
     # fish = 
