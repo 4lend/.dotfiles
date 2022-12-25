@@ -45,7 +45,7 @@
 	    x = 5;
 	    y = 5;
 	  };
-          startup_mode = "Fullscreen";
+          startup_mode = "Maximized";
 	  schemes =
 	  {
 	    ### Doom One ###
@@ -138,6 +138,9 @@
 
 	  fish_color_valid_path --none
 
+	  toggle_fullscreen yes
+	  macos_traditional_fullscreen yes
+	  --start-as
         ";
       keybindings =
       {
