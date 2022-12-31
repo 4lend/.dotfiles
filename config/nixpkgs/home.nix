@@ -38,14 +38,15 @@
 	selection.save_to_clipboard = true; 
 	window =
 	{
-	  opacity = 1.0;
+	  opacity = 1.00;
+	  # opacity = 0.90;
 	  decorations = "none";
 	  padding = 
 	  {
 	    x = 5;
 	    y = 5;
 	  };
-          startup_mode = "Maximized";
+          startup_mode = "Fullscreen";
 	  schemes =
 	  {
 	    ### Doom One ###
@@ -101,9 +102,16 @@
       enable = true;
       config = 
       {
-        sub-font = "Comic Sans";
-        sub-font-size = 35;
-        sub-color = "#FFFE25";
+        sub-font = "ComicMono";
+        # sub-font = "SourceCodePro-Bold";
+        sub-font-size = 37;
+        # sub-color = "#FFFFFF";  # white
+        sub-color = "#FFFE25";  # yellow
+	# sub-border-color = "#202020";
+	sub-border-color = "#000000";  # black
+	sub-border-size = "3";  # default
+	sub-bold = "no";
+	sub-pos = 99;
         window = "fullscreen";
         speed = 1.15;
         playback = "save-position-on-quit";
@@ -121,6 +129,8 @@
       font = 
         {
           name = "ComicMono";
+          # name = "LexendZetta";
+          # name = "ComicNeueAngular";
           size = 14;
         };
       extraConfig =
@@ -329,6 +339,15 @@
     {
     enable = true;
     enableDefaultBindings = true;
+    };
+
+    ## Z-LUA ##
+    z-lua = 
+    {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
     };
   };
 
