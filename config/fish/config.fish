@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 bind \t accept-autosuggestion
+bind X forward-word
 # bind E forward-word
 
 # $ bind | grep forward-char
