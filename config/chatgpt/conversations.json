@@ -39,9 +39,7 @@
         {
           "question": "hello",
           "answer": ""
-        }
-      ],
-      "context": [
+        },
         {
           "question": "youtube",
           "answer": ""
@@ -64,6 +62,32 @@
         },
         {
           "question": "what's up",
+          "answer": ""
+        }
+      ],
+      "context": [
+        {
+          "question": "compile",
+          "answer": ""
+        },
+        {
+          "question": "rust",
+          "answer": ""
+        },
+        {
+          "question": "echo hello | chatgpt",
+          "answer": ""
+        },
+        {
+          "question": "hello",
+          "answer": ""
+        },
+        {
+          "question": "hello",
+          "answer": ""
+        },
+        {
+          "question": "hello",
           "answer": ""
         }
       ]
