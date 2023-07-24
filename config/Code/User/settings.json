@@ -1,0 +1,136 @@
+{
+    "workbench.colorTheme": "Nightfox",
+    "[python]": {
+    
+    
+        "editor.wordBasedSuggestions": false
+    },
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.minimap.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.fontSize": 16,
+    "vim.commandLineModeKeyBindings": [
+    
+    ],
+    "vim.insertModeKeyBindings": [
+        { 
+            "before": ["j", "j"],
+            "after": ["Esc"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-j>"],
+            "command": [
+                ":tabp"
+            ] 
+        },
+        {
+            "before": ["<C-k>"],
+            "command": [
+                ":tabn"
+            ]
+        }
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "monospace",
+    "tabnine.experimentalAutoImports": true,
+    "vscode-neovim.highlightGroups.highlights": {
+
+
+        "Directory": "vim",
+        "IncSearch": {
+            "backgroundColor": "theme.editor.findMatchBackground",
+            "borderColor": "theme.editor.findMatchBorder"
+        },
+        "Search": {
+            "backgroundColor": "theme.editor.findMatchHighlightBackground",
+            "borderColor": "theme.editor.findMatchHighlightBorder"
+        },
+        "Visual": {
+            "backgroundColor": "theme.editor.selectionBackground"
+        },
+        "Conceal": "vim",
+        "Substitute": "vim"
+    },
+    "vscode-neovim.highlightGroups.ignoreHighlights": [
+
+    
+        "EndOfBuffer",
+        "ErrorMsg",
+        "MoreMsg",
+        "ModeMsg",
+        "Question",
+        "VisualNC",
+        "WarningMsg",
+        "^Diff",
+        "Sign",
+        "SignColumn",
+        "^Spell",
+        "^Pmenu",
+        "^Tab",
+        "ColorColumn",
+        "QuickFixLine",
+        "MsgSeparator",
+        "MsgArea",
+        "^RedrawDebug",
+        "^.*MatchParen",
+        "^Nvim",
+        "Operator",
+        "Delimiter",
+        "Identifier",
+        "SpecialChar",
+        "Number",
+        "Type",
+        "String",
+        "Error",
+        "Comment",
+        "Constant",
+        "Special",
+        "Statement",
+        "PreProc",
+        "Underlined",
+        "Ignore",
+        "Todo",
+        "Character",
+        "Boolean",
+        "Float",
+        "Function",
+        "Conditional",
+        "Repeat",
+        "Label",
+        "Keyword",
+        "Exception",
+        "Include",
+        "Define",
+        "Macro",
+        "PreCondit",
+        "StorageClass",
+        "Structure",
+        "Typedef",
+        "Tag",
+        "SpecialComment",
+        "Debug",
+        "Folded",
+        "FoldColumn"
+    ],
+    "editor.codeLensFontFamily": "JetBrains Mono Nerd Font",
+    "editor.fontVariations": true,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "nvim-ui.nvimColorCustomizationKeys": [
+        
+        "editorCursor.foreground"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "codeium.enableSearch": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/etc/profiles/per-user/alfurqani/bin/nvim",
+    "vscode-neovim.revealCursorScrollLine": true,
+    "vscode-neovim.highlightGroups.unknownHighlight": "vim",
+}
