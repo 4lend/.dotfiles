@@ -1,3 +1,6 @@
 2023/07/14-06:23:57.195 21be4 Reusing MANIFEST /home/alfurqani/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
 2023/07/14-06:23:57.195 21be4 Recovering log #3
 2023/07/14-06:23:57.271 21be4 Reusing old log /home/alfurqani/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000003.log 
+2023/07/14-07:29:56.947 25338 Level-0 table #5: started
+2023/07/14-07:29:56.981 25338 Level-0 table #5: 1169562 bytes OK
+2023/07/14-07:29:56.987 25338 Delete type=0 #3
