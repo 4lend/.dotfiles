@@ -39,6 +39,7 @@
     "terminal.integrated.fontFamily": "monospace",
     "tabnine.experimentalAutoImports": true,
     "vscode-neovim.highlightGroups.highlights": {
+        
 
 
         "Directory": "vim",
@@ -122,15 +123,15 @@
     "editor.fontWeight": "normal",
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.lineNumbers": "relative",
-    "nvim-ui.nvimColorCustomizationKeys": [
-        
-        "editorCursor.foreground"
-    ],
+    // "editor.lineNumbers": "relative",
+    // "nvim-ui.nvimColorCustomizationKeys": [
+    //     "editorCursor.foreground"
+    // // ],
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "codeium.enableSearch": true,
     "vscode-neovim.neovimExecutablePaths.linux": "/etc/profiles/per-user/alfurqani/bin/nvim",
     "vscode-neovim.revealCursorScrollLine": true,
     "vscode-neovim.highlightGroups.unknownHighlight": "vim",
+    "eslint.lintTask.enable": true
 }
