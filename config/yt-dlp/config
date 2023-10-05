@@ -1,0 +1,6 @@
+--downloader aria2c
+--write-subs
+--write-auto-subs = true;
+--merge-output-format webm/mkv/mp4
+--video-multistream = true;
+--progress = true;
