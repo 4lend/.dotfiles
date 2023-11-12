@@ -1,8 +1,3 @@
-mkdir View
-mkdir Controller
-mkdir Model
-touch functions.php
-mkdir 
 touch conn.php
 touch html.php
 search lte
@@ -48,3 +43,8 @@ search bat
 search fish
 q
 q!@
+search mysql
+search maria
+search sql
+rename ipzz 003.mp4
+rename IPZZ-003.mp4
