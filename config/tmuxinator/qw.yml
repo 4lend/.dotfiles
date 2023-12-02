@@ -1,0 +1,14 @@
+# /Users/alfurqani/.config/tmuxinator/qw.yml
+
+name: qw
+root: ~/.config/nixpkgs/
+
+windows:
+  - ranger:
+      layout: main-vertical
+      panes:
+        - ranger
+  # - neovim:
+  #     layout: main-horizontal
+  #     panes:
+  #       - nvim

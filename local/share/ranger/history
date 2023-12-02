@@ -1,16 +1,3 @@
-touch conn.php
-touch html.php
-search lte
-search vid
-search web
-search php
-search icon
-touch class.php
-search khan
-search node
-search asd
-search admin
-rename ;aravel
 rename laravel
 rename Laravel
 open_with 
@@ -29,18 +16,15 @@ search vim
 touch
 touch tree.lua
 search lazy
-search kitty
 search mason
 search .con
 search 
 search nvim
 search book
 search safari
-delete
 rename SSIS-554.mp4
 search git
 search bat
-search fish
 q
 q!@
 search mysql
@@ -48,3 +32,19 @@ search maria
 search sql
 rename ipzz 003.mp4
 rename IPZZ-003.mp4
+search zsh
+search bash
+search fish
+search hotkeys
+touch gramaddict.nix
+rename overlays.nix
+rename myoverlays.nix
+mkdir 
+mkdir before
+mkdir after
+touch nvim.nix
+rename neovim.nix
+search kitty
+touch lf.nix
+touch linkForMoreMyPhotography.txt
+delete
